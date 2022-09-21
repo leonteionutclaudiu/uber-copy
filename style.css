@@ -16,6 +16,7 @@
 html {
   /* FONT-SIZE: 1REM=10PX */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -55,11 +56,12 @@ body {
 }
 
 .hero {
-  width: 100vw;
-  height: 100vh;
   background-image: url(./assets/images/hero.png);
+  background-color: var(--color-dark);
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
   line-height: 1.6;
 }
 
@@ -138,6 +140,7 @@ body {
   flex-direction: column;
 }
 
+.sect3-card .learn,
 .learn {
   width: fit-content;
   text-decoration: none;
@@ -146,6 +149,7 @@ body {
   border-bottom: 2px solid var(--color-grey);
 }
 
+.sect3-card .learn,
 .learn:hover {
   color: var(--color-seconday-grey);
   border-bottom: 2px solid var(--color-dark);
@@ -174,8 +178,79 @@ body {
   border-radius: 3rem !important;
 }
 
+.section-2 {
+  background-image: url(./assets/images/section2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 30rem;
+  padding: 6.4rem;
+}
+
+.section-2 h2 {
+  font-size: 3.2rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.section-2 p {
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+}
+
+.section-2-btn {
+  margin-bottom: 3rem !important;
+}
+
+.section-3 {
+  padding: 5.6rem 3.2rem;
+}
+
+.section-3 h2 {
+  font-size: 3.2rem;
+  /* padding: 3.2rem; */
+  margin-bottom: 2rem;
+  color: var(--color-seconday-grey);
+}
+
+.section3-cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.sect3-card {
+  min-width: 20rem !important;
+  max-width: 40vw;
+  color: var(--color-seconday-grey) !important;
+  border: 0 !important;
+}
+
+.sect3-card .card-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.sect3-card .card-text {
+  font-size: 1.4rem;
+}
+
+.sect3-card .learn {
+  font-size: 1.6rem;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
+  .hero {
+    background-size: contain;
+    background-position: center bottom;
+  }
+
+  .hero-cta {
+    opacity: 0.9;
+  }
+
   .div2 {
     flex-direction: column;
     width: 90vw;
@@ -203,13 +278,9 @@ body {
   }
 }
 
-@media screen and (max-width: 500px) {
-  .hero-cta {
-    padding: 2.4rem;
-  }
-
-  .hero-cta h1 {
-    font-size: 3rem;
+@media screen and (max-width: 660px) {
+  .sect3-card {
+    max-width: 100vw;
   }
 }
 
@@ -225,5 +296,17 @@ body {
   .hero-p2 {
     font-size: 1rem;
     margin-bottom: 2.4rem;
+  }
+
+  .section-2 {
+    padding: 3.2rem;
+  }
+
+  .section-2 h2 {
+    font-size: 2.4rem;
+  }
+
+  .section-2 p {
+    font-size: 1.2rem;
   }
 }
