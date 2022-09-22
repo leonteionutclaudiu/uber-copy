@@ -16,13 +16,13 @@
 html {
   /* FONT-SIZE: 1REM=10PX */
   font-size: 62.5%;
-  overflow-x: hidden;
 }
 
 body {
   /* font-family: "Uber Move Medium", sans-serif !important; */
   font-family: "Familjen Grotesk", sans-serif !important;
   font-size: 1.6rem !important;
+  overflow-x: hidden;
 }
 
 .color-light {
@@ -565,6 +565,10 @@ body {
   .app {
     width: 90vw;
   }
+
+  .div2 {
+    width: 80vw !important;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -609,10 +613,6 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  .alert-covid {
-    padding: 1rem;
-  }
-
   .alert-covid h2 {
     font-size: 1.4rem;
   }
@@ -648,5 +648,9 @@ body {
 
   .section-2 p {
     font-size: 1.2rem;
+  }
+
+  .div2 {
+    width: 70vw !important;
   }
 }
