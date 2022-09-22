@@ -20,7 +20,8 @@ html {
 }
 
 body {
-  font-family: "Uber Move Medium", sans-serif !important;
+  /* font-family: "Uber Move Medium", sans-serif !important; */
+  font-family: "Familjen Grotesk", sans-serif !important;
   font-size: 1.6rem !important;
 }
 
@@ -66,7 +67,7 @@ body {
   max-width: 100vw;
   margin: 0 auto;
   padding: 0 6.4rem;
-  background-color: var(--color-light) !important;
+  background-color: #eff3fe;
 }
 
 .alert-covid h2 {
@@ -81,9 +82,12 @@ body {
 }
 
 .alert-anchor {
+  width: fit-content;
   color: var(--color-seconday-grey);
   transition: all 0.4s;
   margin-bottom: 2rem;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-grey);
 }
 
 .alert-anchor:hover {
@@ -97,7 +101,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   line-height: 1.6;
 }
 
@@ -320,6 +324,10 @@ body {
 }
 
 /* SECTION 5 */
+.section-5 {
+  background-color: #f6f6f6;
+}
+
 .section-5 h2 {
   padding: 2rem 8rem;
   font-size: 3.6rem;
@@ -355,7 +363,176 @@ body {
   transform: translateX(1rem);
 }
 
+/* SECTION 6 */
+.section-6 {
+  gap: 6rem;
+  padding: 6.4rem;
+}
+
+.sect6-div {
+  border-bottom: 1px solid var(--color-dark);
+  padding-bottom: 4rem;
+  width: 50rem;
+  max-width: 50vw;
+  font-size: 3.6rem;
+}
+
+.sect6-div h2 {
+  font-size: 3.6rem;
+}
+
+.sect6-div i:hover {
+  overflow: hidden;
+  cursor: pointer;
+  color: var(--color-seconday-grey);
+  animation-name: moveToRight;
+  animation-duration: 0.5s;
+}
+
+/* SECTION-FOOTER */
+.section-footer {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  padding: 6.4rem;
+}
+
+.footer-title {
+  display: block;
+  font-size: 1.4rem;
+  text-align: end;
+  text-decoration: none;
+  color: var(--color-light);
+}
+
+.footer-title:hover {
+  color: var(--color-grey);
+}
+
+.footer-content {
+  padding: 4rem;
+  gap: 2rem;
+}
+
+.help-center-box {
+  gap: 4rem;
+  height: 14rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  margin-bottom: 6rem;
+}
+
+.help-center {
+  width: fit-content;
+  height: 6rem;
+  border-bottom: 1px solid var(--color-dark);
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: var(--color-light);
+  padding-bottom: 0.5rem;
+}
+
+.help-center:hover {
+  color: var(--color-light);
+  border-bottom: 1px solid var(--color-light);
+}
+
+.footer-main {
+  padding: 2rem;
+  gap: 6rem;
+}
+
+.footer-subtitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-element {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--color-light);
+  padding: 0.8rem;
+}
+
+.footer-element:hover {
+  color: var(--color-grey);
+}
+
+.footer-below {
+  gap: 4rem;
+}
+
+.footer-icon {
+  text-align: center;
+  padding: 2rem;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.footer-icon:hover {
+  background-color: var(--color-grey);
+  border-radius: 15%;
+}
+
+.download-app-box {
+  gap: 4rem;
+}
+
+.download-app-img {
+  width: 16rem;
+  cursor: pointer;
+}
+
+.copyrights {
+  margin-top: 6rem;
+}
+
+.copyrights p {
+  font-size: 1.2rem;
+  color: var(--color-grey);
+}
+
+.copyright-links {
+  font-size: 1.2rem;
+  color: var(--color-grey);
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+.copyright-links:hover {
+  color: var(--color-seconday-grey);
+}
+
+/* KEY FRAMES */
+
+@keyframes moveToRight {
+  0% {
+    transform: translateX(0rem);
+  }
+
+  50% {
+    transform: translateX(3rem);
+    opacity: 0;
+  }
+
+  75% {
+    transform: translateX(-3rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+
 /* MEDIA QUERIES */
+@media screen and (max-width: 1205px) {
+  .sect6-div {
+    width: 100%;
+    max-width: 100vw;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .hero {
     background-size: contain;
@@ -369,6 +546,18 @@ body {
   .div2 {
     flex-direction: column;
     width: 90vw;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .hero-cta {
+    padding: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero-cta {
+    padding: 1.2rem;
   }
 }
 
@@ -410,6 +599,12 @@ body {
 
   .sect4-card {
     width: 100vw;
+  }
+
+  .footer-title {
+    max-width: 40ch;
+    text-align: center;
+    margin-bottom: 4rem;
   }
 }
 
