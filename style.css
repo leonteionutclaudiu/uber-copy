@@ -40,11 +40,17 @@ body {
   background-color: var(--color-dark) !important;
 }
 
+/* NAVBAR */
 .navbar {
   background-color: var(--color-dark) !important;
   max-height: 6.4rem !important;
   padding: 1.2rem 6.4rem !important;
   font-size: 1.4rem !important;
+}
+
+#navbarNavDropdown {
+  background-color: var(--color-dark) !important;
+  z-index: 2;
 }
 
 .uber {
@@ -55,6 +61,36 @@ body {
   width: 65vw;
 }
 
+/* ALERT COVID */
+.alert-covid {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 6.4rem;
+  background-color: var(--color-light) !important;
+}
+
+.alert-covid h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.alert-covid p {
+  font-size: 1.6rem;
+}
+
+.alert-anchor {
+  color: var(--color-seconday-grey);
+  transition: all 0.4s;
+  margin-bottom: 2rem;
+}
+
+.alert-anchor:hover {
+  color: var(--color-grey);
+}
+
+/* HERO */
 .hero {
   background-image: url(./assets/images/hero.png);
   background-color: var(--color-dark);
@@ -63,11 +99,6 @@ body {
   width: 100vw;
   height: 100vh;
   line-height: 1.6;
-}
-
-#navbarNavDropdown {
-  background-color: var(--color-dark) !important;
-  z-index: 2;
 }
 
 .hero-cta {
@@ -383,6 +414,22 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+  .alert-covid {
+    padding: 1rem;
+  }
+
+  .alert-covid h2 {
+    font-size: 1.4rem;
+  }
+
+  .alert-covid p {
+    font-size: 1.2rem;
+  }
+
+  .alert-anchor {
+    font-size: 1.2rem;
+  }
+
   .hero-cta {
     padding: 2rem;
   }
