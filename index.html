@@ -40,12 +40,14 @@
       crossorigin="anonymous"
     ></script>
 
+    <script defer src="script.js"></script>
+
     <title>Earn Money by Driving or Get a Ride Now | Uber Romania</title>
 
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
   </head>
   <body>
-    <section class="hero">
+    <section class="hero" id="section-hero">
       <nav class="navbar navbar-expand-xl">
         <div class="container-fluid">
           <a class="navbar-brand color-light uber me-5" href="#">Uber</a>
@@ -164,24 +166,28 @@
         <div class="choose">
           <div class="drive">
             <i class="fa-solid fa-chart-line"></i>
-            <p class="hero-p1">Drive or deliver</p>
+            <p class="hero-p1" id="drive">Drive or deliver</p>
           </div>
           <div class="choose-box">
-            <i class="fa-solid fa-utensils"></i>
-            <p class="hero-p1">Eat</p>
+            <div class="eat">
+              <i class="fa-solid fa-utensils"></i>
+              <p class="hero-p1" id="eat">Eat</p>
+            </div>
           </div>
           <div class="choose-box">
-            <i class="fa-solid fa-car"></i>
-            <p class="hero-p1">Ride</p>
+            <div class="ride">
+              <i class="fa-solid fa-car"></i>
+              <p class="hero-p1" id="ride">Ride</p>
+            </div>
           </div>
         </div>
-        <h1 class="mt-2">Get in the driver's seat and get paid</h1>
-        <p class="hero-p2">
+        <h1 class="mt-2" id="heroH1">Get in the driver's seat and get paid</h1>
+        <p class="hero-p2" id="heroP">
           Drive on the platform with the largest network of active riders.
         </p>
         <div class="cta-btns">
-          <a class="cta-btn" href="#">Sign up to drive</a>
-          <a href="#" class="learn margin-top1">
+          <a class="cta-btn" id="heroBtn1" href="#">Sign up to drive</a>
+          <a href="#" id="heroBtn2" class="learn margin-top1">
             Learn more about driving and delivering
           </a>
         </div>
